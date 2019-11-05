@@ -1,6 +1,7 @@
-package com.example.mybooks
+package com.example.mybooks.database
 
 import androidx.room.*
+import com.example.mybooks.database.Book
 
 @Dao
 interface BookDao   {
@@ -14,7 +15,7 @@ interface BookDao   {
     fun atualizar(book: Book): Int
 
     @Query("SELECT * FROM book")
-    fun listAll(): Array<Book>
+    fun listAll(): List<Book>
 
     @Query("SELECT * FROM book WHERE id = :id")
     fun findById(id: Long): Book

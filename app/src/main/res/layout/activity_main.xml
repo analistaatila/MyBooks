@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,9 +28,26 @@
             android:text="cadastrar novo" />
 
         <Button
-            android:id="@+id/btnList"
+            android:id="@+id/btnListAd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="listar livros" />
+            android:text="ver livros" />
+
+        <Button
+            android:id="@+id/btnListad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar livros" />
+
+        <Button
+            android:id="@+id/btnListre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar livros" />
+        <Button
+            android:id="@+id/btnListp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar livros page view" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

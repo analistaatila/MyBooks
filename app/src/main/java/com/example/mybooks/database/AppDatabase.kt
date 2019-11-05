@@ -1,4 +1,4 @@
-package com.example.mybooks
+package com.example.mybooks.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

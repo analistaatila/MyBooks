@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListBooksActivity"></activity>
-        <activity android:name=".AddBookActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.PageViewActivity"></activity>
+        <activity android:name=".activity.ListBookRecycleActivity" />
+        <activity android:name=".activity.ListAdapterActivity" />
+        <activity android:name=".activity.ListBooksActivity" />
+        <activity android:name=".activity.AddBookActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

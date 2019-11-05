@@ -1,16 +1,18 @@
-package com.example.mybooks
+package com.example.mybooks.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.room.Room
+import com.example.mybooks.R
+import com.example.mybooks.database.AppDatabase
 import kotlinx.android.synthetic.main.activity_list_books.*
 
 class ListBooksActivity : AppCompatActivity() {
 
     var currentIdx = 0
 
-    val db:AppDatabase by lazy {
+    val db: AppDatabase by lazy {
         Room.databaseBuilder(
             this,
             AppDatabase::class.java, "my-books")
